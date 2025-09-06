@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home" id="homeLink">Home</a></li>
+        <li><a href="#features" id="featuresLink">Features</a></li>
+        <li><a href="#contact" id="contactLink">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome to My Interactive Page</h1>
+    <p>Click the button below to change the theme color.</p>
+    <button id="themeBtn">Toggle Dark Mode</button>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Features</h2>
+    <p>Type something in the input box and see live feedback:</p>
+    <input type="text" id="liveInput" placeholder="Type here...">
+    <p id="liveOutput"></p>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm" novalidate>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br><br>
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message"></textarea><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <p id="formFeedback"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
